@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "title": "Introduction to React",
+    "definition": "React is a JavaScript library for building user interfaces.",
+    "explanation": "React helps developers build reusable UI components and create single-page applications efficiently.",
+    "example": "function App() { return <h1>Hello React</h1>; }",
+    "mcqs": [
+      {
+        "question": "Who developed React?",
+        "options": ["Google", "Facebook", "Microsoft", "Amazon"],
+        "answer": "Facebook"
+      },
+      {
+        "question": "React is a?",
+        "options": ["Framework", "Library", "Database", "Language"],
+        "answer": "Library"
+      },
+      {
+        "question": "React is mainly used for?",
+        "options": ["Backend", "UI", "Database", "Networking"],
+        "answer": "UI"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "JSX",
+    "definition": "JSX stands for JavaScript XML.",
+    "explanation": "JSX allows writing HTML-like code inside JavaScript.",
+    "example": "const element = <h1>Welcome</h1>;",
+    "mcqs": [
+      {
+        "question": "JSX stands for?",
+        "options": ["Java XML", "JavaScript XML", "JSON XML", "JavaScript X"],
+        "answer": "JavaScript XML"
+      },
+      {
+        "question": "JSX is converted into?",
+        "options": ["HTML", "Java", "JavaScript", "CSS"],
+        "answer": "JavaScript"
+      },
+      {
+        "question": "Which symbol is used to embed JS in JSX?",
+        "options": ["()", "{}", "[]", "<>"],
+        "answer": "{}"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Components",
+    "definition": "Components are reusable building blocks in React.",
+    "explanation": "React applications are built using independent reusable components.",
+    "example": "function Header(){ return <h1>Header</h1>; }",
+    "mcqs": [
+      {
+        "question": "Components help achieve?",
+        "options": ["Reusability", "Database", "Security", "Hosting"],
+        "answer": "Reusability"
+      },
+      {
+        "question": "Which component type is recommended?",
+        "options": ["Functional", "Class", "Servlet", "Bean"],
+        "answer": "Functional"
+      },
+      {
+        "question": "Components return?",
+        "options": ["SQL", "JSX", "CSS", "XML"],
+        "answer": "JSX"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Props",
+    "definition": "Props are used to pass data between components.",
+    "explanation": "Props are read-only values passed from parent to child.",
+    "example": "<User name='John' />",
+    "mcqs": [
+      {
+        "question": "Props are passed from?",
+        "options": ["Child to Parent", "Parent to Child", "Database", "Server"],
+        "answer": "Parent to Child"
+      },
+      {
+        "question": "Props are?",
+        "options": ["Mutable", "Read Only", "Database", "Functions"],
+        "answer": "Read Only"
+      },
+      {
+        "question": "Props improve?",
+        "options": ["Communication", "Database", "Networking", "Storage"],
+        "answer": "Communication"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "State",
+    "definition": "State stores dynamic data in a component.",
+    "explanation": "State changes trigger re-rendering of UI.",
+    "example": "const [count,setCount]=useState(0);",
+    "mcqs": [
+      {
+        "question": "Which hook manages state?",
+        "options": ["useData", "useState", "useApi", "useFetch"],
+        "answer": "useState"
+      },
+      {
+        "question": "State changes cause?",
+        "options": ["Refresh UI", "Database Update", "Server Restart", "Compile"],
+        "answer": "Refresh UI"
+      },
+      {
+        "question": "State is?",
+        "options": ["Static", "Dynamic", "Database", "CSS"],
+        "answer": "Dynamic"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Event Handling",
+    "definition": "Events respond to user actions.",
+    "explanation": "React uses camelCase event names such as onClick.",
+    "example": "<button onClick={handleClick}>Click</button>",
+    "mcqs": [
+      {
+        "question": "Button click event?",
+        "options": ["onclick", "onClick", "click", "Click"],
+        "answer": "onClick"
+      },
+      {
+        "question": "React event names use?",
+        "options": ["camelCase", "snake_case", "PascalCase", "UPPERCASE"],
+        "answer": "camelCase"
+      },
+      {
+        "question": "Events handle?",
+        "options": ["User Actions", "Database", "Server", "Hosting"],
+        "answer": "User Actions"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Conditional Rendering",
+    "definition": "Conditional rendering displays content based on conditions.",
+    "explanation": "You can use if statements, ternary operators, and logical operators.",
+    "example": "{isLogin ? <Home/> : <Login/>}",
+    "mcqs": [
+      {
+        "question": "Conditional rendering depends on?",
+        "options": ["Conditions", "Database", "API", "CSS"],
+        "answer": "Conditions"
+      },
+      {
+        "question": "Which operator is commonly used?",
+        "options": ["+", "-", "?", "*"],
+        "answer": "?"
+      },
+      {
+        "question": "Conditional rendering improves?",
+        "options": ["Dynamic UI", "Storage", "Database", "Server"],
+        "answer": "Dynamic UI"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Lists and Keys",
+    "definition": "Lists render multiple items dynamically.",
+    "explanation": "Keys help React identify changed items efficiently.",
+    "example": "users.map(user => <li key={user.id}>{user.name}</li>)",
+    "mcqs": [
+      {
+        "question": "Which method is used to render lists?",
+        "options": ["map()", "filter()", "sort()", "push()"],
+        "answer": "map()"
+      },
+      {
+        "question": "Keys should be?",
+        "options": ["Unique", "Duplicate", "Null", "String Only"],
+        "answer": "Unique"
+      },
+      {
+        "question": "Keys help React?",
+        "options": ["Track Items", "Store Data", "Call APIs", "Compile"],
+        "answer": "Track Items"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Forms",
+    "definition": "Forms collect user input.",
+    "explanation": "React forms are usually controlled using state.",
+    "example": "<input value={name} onChange={handleChange} />",
+    "mcqs": [
+      {
+        "question": "Forms are used for?",
+        "options": ["Input", "Database", "CSS", "Routing"],
+        "answer": "Input"
+      },
+      {
+        "question": "Controlled forms use?",
+        "options": ["State", "Database", "HTML Only", "Cookies"],
+        "answer": "State"
+      },
+      {
+        "question": "Input change event?",
+        "options": ["onSubmit", "onClick", "onChange", "onFocus"],
+        "answer": "onChange"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "useState Hook",
+    "definition": "useState adds state to functional components.",
+    "explanation": "It returns a state variable and a setter function.",
+    "example": "const [count,setCount]=useState(0);",
+    "mcqs": [
+      {
+        "question": "useState returns?",
+        "options": ["Array", "Object", "String", "Boolean"],
+        "answer": "Array"
+      },
+      {
+        "question": "Setter updates?",
+        "options": ["State", "Database", "CSS", "API"],
+        "answer": "State"
+      },
+      {
+        "question": "useState belongs to?",
+        "options": ["React Hooks", "Java", "Spring", "SQL"],
+        "answer": "React Hooks"
+      }
+    ]
+  },
+    {
+    "id": 11,
+    "title": "useEffect Hook",
+    "definition": "useEffect performs side effects in functional components.",
+    "explanation": "It is used for API calls, timers, subscriptions, and lifecycle-like behavior.",
+    "example": "useEffect(() => { console.log('Loaded'); }, []);",
+    "mcqs": [
+      {
+        "question": "useEffect is used for?",
+        "options": ["Side Effects", "Database", "CSS", "Routing"],
+        "answer": "Side Effects"
+      },
+      {
+        "question": "Empty dependency array means?",
+        "options": ["Run Once", "Run Always", "Never Run", "Error"],
+        "answer": "Run Once"
+      },
+      {
+        "question": "API calls are commonly placed in?",
+        "options": ["useEffect", "useState", "Props", "JSX"],
+        "answer": "useEffect"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "useContext Hook",
+    "definition": "useContext accesses shared data without prop drilling.",
+    "explanation": "It simplifies state sharing across multiple components.",
+    "example": "const value = useContext(UserContext);",
+    "mcqs": [
+      {
+        "question": "useContext helps avoid?",
+        "options": ["Prop Drilling", "API", "CSS", "JSX"],
+        "answer": "Prop Drilling"
+      },
+      {
+        "question": "Context data is provided using?",
+        "options": ["Provider", "Reducer", "State", "Router"],
+        "answer": "Provider"
+      },
+      {
+        "question": "useContext belongs to?",
+        "options": ["Hooks", "Database", "HTML", "Java"],
+        "answer": "Hooks"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "useRef Hook",
+    "definition": "useRef stores mutable values and references DOM elements.",
+    "explanation": "Updating a ref does not trigger a re-render.",
+    "example": "const inputRef = useRef();",
+    "mcqs": [
+      {
+        "question": "useRef is commonly used for?",
+        "options": ["DOM Access", "Routing", "CSS", "Database"],
+        "answer": "DOM Access"
+      },
+      {
+        "question": "Changing ref value causes?",
+        "options": ["No Re-render", "Re-render", "Compile", "Reload"],
+        "answer": "No Re-render"
+      },
+      {
+        "question": "useRef returns?",
+        "options": ["Object", "Array", "String", "Boolean"],
+        "answer": "Object"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Routing",
+    "definition": "Routing enables navigation between pages in React.",
+    "explanation": "React Router is the most popular routing library.",
+    "example": "<Route path='/home' element={<Home />} />",
+    "mcqs": [
+      {
+        "question": "Which library is used for routing?",
+        "options": ["React Router", "Redux", "Axios", "Bootstrap"],
+        "answer": "React Router"
+      },
+      {
+        "question": "Routing helps with?",
+        "options": ["Navigation", "Database", "Storage", "Styling"],
+        "answer": "Navigation"
+      },
+      {
+        "question": "Route path defines?",
+        "options": ["URL", "CSS", "Database", "API"],
+        "answer": "URL"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "API Integration",
+    "definition": "API integration connects React applications to external services.",
+    "explanation": "Developers commonly use Fetch API or Axios.",
+    "example": "axios.get('/users').then(res => console.log(res.data));",
+    "mcqs": [
+      {
+        "question": "Axios is used for?",
+        "options": ["HTTP Requests", "CSS", "Routing", "Database"],
+        "answer": "HTTP Requests"
+      },
+      {
+        "question": "GET request is used to?",
+        "options": ["Read Data", "Delete Data", "Compile", "Style UI"],
+        "answer": "Read Data"
+      },
+      {
+        "question": "Fetch API is built into?",
+        "options": ["Browser", "Database", "Spring", "Java"],
+        "answer": "Browser"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Context API",
+    "definition": "Context API provides global state management.",
+    "explanation": "It is useful when many components need access to the same data.",
+    "example": "<UserContext.Provider value={user}>",
+    "mcqs": [
+      {
+        "question": "Context API manages?",
+        "options": ["Global State", "Database", "Routing", "CSS"],
+        "answer": "Global State"
+      },
+      {
+        "question": "Data is supplied through?",
+        "options": ["Provider", "Consumer", "Router", "Reducer"],
+        "answer": "Provider"
+      },
+      {
+        "question": "Context reduces?",
+        "options": ["Prop Drilling", "Styling", "APIs", "Database"],
+        "answer": "Prop Drilling"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Redux Toolkit",
+    "definition": "Redux Toolkit simplifies Redux state management.",
+    "explanation": "It reduces boilerplate code and improves maintainability.",
+    "example": "const store = configureStore({ reducer });",
+    "mcqs": [
+      {
+        "question": "Redux is used for?",
+        "options": ["State Management", "Routing", "CSS", "Database"],
+        "answer": "State Management"
+      },
+      {
+        "question": "Redux Toolkit reduces?",
+        "options": ["Boilerplate", "Storage", "Hosting", "API Calls"],
+        "answer": "Boilerplate"
+      },
+      {
+        "question": "Store contains?",
+        "options": ["Application State", "CSS", "HTML", "Images"],
+        "answer": "Application State"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Performance Optimization",
+    "definition": "Optimization improves application speed and efficiency.",
+    "explanation": "React provides memoization and lazy loading features.",
+    "example": "export default React.memo(Component);",
+    "mcqs": [
+      {
+        "question": "React.memo prevents?",
+        "options": ["Unnecessary Re-renders", "API Calls", "Routing", "Database"],
+        "answer": "Unnecessary Re-renders"
+      },
+      {
+        "question": "Lazy loading improves?",
+        "options": ["Performance", "Database", "Storage", "Security"],
+        "answer": "Performance"
+      },
+      {
+        "question": "useMemo is used for?",
+        "options": ["Memoization", "Routing", "Styling", "Database"],
+        "answer": "Memoization"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Testing",
+    "definition": "Testing verifies application functionality.",
+    "explanation": "Jest and React Testing Library are commonly used.",
+    "example": "test('renders button', () => {});",
+    "mcqs": [
+      {
+        "question": "Popular React testing framework?",
+        "options": ["Jest", "Hibernate", "Maven", "Tomcat"],
+        "answer": "Jest"
+      },
+      {
+        "question": "Testing ensures?",
+        "options": ["Correct Behavior", "Styling", "Hosting", "Database"],
+        "answer": "Correct Behavior"
+      },
+      {
+        "question": "Unit tests verify?",
+        "options": ["Individual Components", "Servers", "Networks", "Databases"],
+        "answer": "Individual Components"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Deployment",
+    "definition": "Deployment publishes an application for users.",
+    "explanation": "React applications can be deployed to hosting platforms.",
+    "example": "npm run build",
+    "mcqs": [
+      {
+        "question": "Which command creates production build?",
+        "options": ["npm run build", "npm start", "npm install", "npm test"],
+        "answer": "npm run build"
+      },
+      {
+        "question": "Deployment makes app?",
+        "options": ["Available Online", "Compiled Only", "Deleted", "Offline"],
+        "answer": "Available Online"
+      },
+      {
+        "question": "React build folder contains?",
+        "options": ["Production Files", "Database", "Java Code", "SQL"],
+        "answer": "Production Files"
+      }
+    ]
+  }
+]
